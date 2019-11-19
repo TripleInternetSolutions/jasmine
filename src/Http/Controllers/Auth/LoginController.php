@@ -2,8 +2,9 @@
 
 namespace TIS\Jasmine\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use TIS\Jasmine\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
@@ -21,26 +22,34 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
-
-    /**
      * Create a new controller instance.
      *
      * @return void
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:jasmine_web')->except('logout');
     }
+
+    protected function guard()
+    {
+        return Auth::guard('jasmine_web');
+    }
+
 
     public function showLoginForm()
     {
         return view('jasmine::auth.login');
     }
 
+    /**
+     * Where to redirect users after login.
+     *
+     * @return string
+     */
+    public function redirectTo()
+    {
+        return route('jasmine.dashboard');
+    }
 
 }

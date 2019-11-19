@@ -2,8 +2,8 @@
 
 namespace TIS\Jasmine\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ConfirmsPasswords;
+use TIS\Jasmine\Http\Controllers\Controller;
 
 class ConfirmPasswordController extends Controller
 {
@@ -20,12 +20,6 @@ class ConfirmPasswordController extends Controller
 
     use ConfirmsPasswords;
 
-    /**
-     * Where to redirect users when the intended url fails.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -34,6 +28,17 @@ class ConfirmPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth:jasmine_web');
     }
+
+    /**
+     * Where to redirect users after login.
+     *
+     * @return string
+     */
+    public function redirectTo()
+    {
+        return route('jasmine.dashboard');
+    }
+
 }

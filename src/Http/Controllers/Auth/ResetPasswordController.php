@@ -2,8 +2,10 @@
 
 namespace TIS\Jasmine\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Password;
+use TIS\Jasmine\Http\Controllers\Controller;
 
 class ResetPasswordController extends Controller
 {
@@ -20,10 +22,24 @@ class ResetPasswordController extends Controller
 
     use ResetsPasswords;
 
+    public function broker()
+    {
+        return Password::broker('jasmine_users');
+    }
+
+    protected function guard()
+    {
+        return Auth::guard('jasmine_web');
+    }
+
+
     /**
      * Where to redirect users after resetting their password.
      *
-     * @var string
+     * @return string
      */
-    protected $redirectTo = '/home';
+    public function redirectTo()
+    {
+        return route('jasmine.dashboard');
+    }
 }

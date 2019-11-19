@@ -18,4 +18,11 @@ Route::group([
     Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 
 
+    // Authenticated routes
+    Route::group([
+        'middleware' => ['jasmineAuth:jasmine_web'],
+    ], function () {
+        Route::get('/', 'DashboardController@index')->name('dashboard');
+    });
+
 });
