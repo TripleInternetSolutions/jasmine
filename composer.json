@@ -1,7 +1,6 @@
 {
   "name": "tis/jasmine",
   "description": "A Laravel Admin Package.",
-  "type": "project",
   "license": "MIT",
   "authors": [
     {
