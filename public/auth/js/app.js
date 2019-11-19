@@ -17847,8 +17847,8 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\jasmine\jasmine\resources\mixes\auth\js\app.js */"./resources/mixes/auth/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\jasmine\jasmine\resources\mixes\auth\sass\app.scss */"./resources/mixes/auth/sass/app.scss");
+__webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\tis\jasmine\resources\mixes\auth\js\app.js */"./resources/mixes/auth/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\tis\jasmine\resources\mixes\auth\sass\app.scss */"./resources/mixes/auth/sass/app.scss");
 
 
 /***/ })
