@@ -1,0 +1,29 @@
+{
+  "name": "jasmine/jasmine",
+  "description": "A Laravel Admin Package.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mordi Sacks"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jasmine\\Jasmine\\": "src/"
+    },
+    "files": [
+      "helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jasmine\\Jasmine\\JasmineServiceProvider"
+      ],
+      "aliases": {
+        "Jasmine": "Jasmine\\Jasmine\\Facades\\Jasmine"
+      }
+    }
+  }
+}
