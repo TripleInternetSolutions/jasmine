@@ -3,6 +3,7 @@
 namespace TIS\Jasmine;
 
 use Illuminate\Support\ServiceProvider;
+use TIS\Jasmine\Console\Commands\CreateUser;
 
 class JasmineServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,10 @@ class JasmineServiceProvider extends ServiceProvider
         $this->app->singleton('jasmine', function () {
             return new Jasmine();
         });
+
+        if ($this->app->runningInConsole()) {
+            $this->registerConsoleCommands();
+        }
     }
 
     /**
@@ -39,5 +44,11 @@ class JasmineServiceProvider extends ServiceProvider
                 public_path('jasmine-assets')
             );
         }
+    }
+
+
+    private function registerConsoleCommands()
+    {
+        $this->commands(CreateUser::class);
     }
 }
