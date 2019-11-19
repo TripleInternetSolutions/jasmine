@@ -17904,8 +17904,8 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\jasmine\jasmine\resources\mixes\app\js\app.js */"./resources/mixes/app/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\jasmine\jasmine\resources\mixes\app\sass\app.scss */"./resources/mixes/app/sass/app.scss");
+__webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\tis\jasmine\resources\mixes\app\js\app.js */"./resources/mixes/app/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\any\PhpstormProjects\JasmineLara\packages\tis\jasmine\resources\mixes\app\sass\app.scss */"./resources/mixes/app/sass/app.scss");
 
 
 /***/ })

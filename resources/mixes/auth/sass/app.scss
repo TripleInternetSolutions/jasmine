@@ -1,6 +1,7 @@
 //@import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/buttons";
 @import "~bootstrap/scss/card";
 @import "~bootstrap/scss/forms";
@@ -35,7 +36,7 @@ body {
 }
 
 .card {
-  width: 400px;
+  width: 410px;
   max-width: 95%;
   border-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .05);

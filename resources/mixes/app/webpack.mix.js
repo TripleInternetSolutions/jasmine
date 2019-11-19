@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix
     .setPublicPath(`public/${process.env.section}`)
-    .setResourceRoot(`/jasmine-assets/`)
+    .setResourceRoot(`/jasmine-assets/${process.env.section}/`)
     .js(`resources/mixes/${process.env.section}/js/app.js`, `public/${process.env.section}/js`)
     .sass(`resources/mixes/${process.env.section}/sass/app.scss`, `public/${process.env.section}/css`)
 ;

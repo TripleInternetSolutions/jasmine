@@ -31,5 +31,4 @@ class ForgotPasswordController extends Controller
         return view('jasmine::auth.passwords.email');
     }
 
-
 }
