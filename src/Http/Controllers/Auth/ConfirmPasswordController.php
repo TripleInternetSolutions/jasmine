@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasmine\Jasmine\Http\Controllers\Auth;
+namespace TIS\Jasmine\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ConfirmsPasswords;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasmine\Jasmine\Facades;
+namespace TIS\Jasmine\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

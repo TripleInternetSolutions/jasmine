@@ -1,5 +1,5 @@
 {
-  "name": "jasmine/jasmine",
+  "name": "tis/jasmine",
   "description": "A Laravel Admin Package.",
   "type": "project",
   "license": "MIT",
@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Jasmine\\Jasmine\\": "src/"
+      "TIS\\Jasmine\\": "src/"
     },
     "files": [
       "helpers.php"
@@ -19,10 +19,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Jasmine\\Jasmine\\JasmineServiceProvider"
+        "TIS\\Jasmine\\JasmineServiceProvider"
       ],
       "aliases": {
-        "Jasmine": "Jasmine\\Jasmine\\Facades\\Jasmine"
+        "Jasmine": "TIS\\Jasmine\\Facades\\Jasmine"
       }
     }
   }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasmine\Jasmine;
+namespace TIS\Jasmine;
 
 use Illuminate\Support\ServiceProvider;
 

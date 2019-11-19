@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasmine\Jasmine\Http\Controllers;
+namespace TIS\Jasmine\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

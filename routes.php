@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-    'namespace' => '\\Jasmine\\Jasmine\\Http\Controllers',
+    'namespace' => '\\TIS\\Jasmine\\Http\Controllers',
     'as' => 'jasmine.',
     'name' => 'jasmine.',
 ], function () {
