@@ -3,6 +3,7 @@
 namespace TIS\Jasmine\Http\Controllers\Auth;
 
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use TIS\Jasmine\Http\Controllers\Controller;
 
@@ -51,5 +52,11 @@ class LoginController extends Controller
     {
         return route('jasmine.dashboard');
     }
+
+    protected function loggedOut(Request $request)
+    {
+        return redirect(route('jasmine.login'));
+    }
+
 
 }
